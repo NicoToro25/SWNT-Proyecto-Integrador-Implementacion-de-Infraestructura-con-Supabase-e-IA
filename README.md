@@ -1,0 +1,1 @@
+# SWNT-Proyecto-Integrador--Implementaci-n-de-Infraestructura-con-Supabase-e-IA
