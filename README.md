@@ -4,15 +4,13 @@
 
 ---
 
-Scaffolding de aplicación de gestión de inventario sostenible utilizando React(vite) y Supabase. Se aplica el Desarrollo Basado en Especificaciones (BDD) para crear el scaffolding y garantizar que la implementación cumpla con los requisitos definidos en la fase de diseño. 
+Diseño y creación de la base de datos de MentorLink con Supabase.
 
-## Entregables
-
-a. Captura de pantalla/Texto del Prompt Maestro
+Aclaración: Los entregables estan marcados con ❗
 
 ## Bitácora de prompts
 
-### Fase 1 - Diseño del Esquema de Datos con IA
+### Fase 1 - Diseño del Esquema de Datos con IA ❗
 
 **Prompt:**
 
@@ -125,7 +123,7 @@ CREATE INDEX idx_mensajes_created_at   ON mensajes(created_at);
 
 **Índices selectivos** — Se indexan las FKs (para JOINs rápidos), el campo `estado` (para filtros comunes como "sesiones activas") y `created_at` en mensajes (para ordenamiento cronológico en chats).
 
-### Fase 1 - Iteración para mejorar respuesta
+### Fase 1 - Iteración para mejorar respuesta ❗
 
 **Prompt:**
 
@@ -139,7 +137,7 @@ Quiero que:
 - Mejores naming si es necesario
 Devuelve el SQL final optimizado.
 
-**Respuesta:**
+**Respuesta:** ❗
 
 ```sql
 -- ============================================================
@@ -662,7 +660,7 @@ Cliente (anon / authenticated)
 
 **Política de inserción de mensajes valida `estado = 'activa'`** — Previene que se envíen mensajes a sesiones cerradas o aún no confirmadas, directamente en la base de datos sin depender del frontend.
 
-### Fase 3 - Implementación con Supabase CLI
+### Fase 3 - Implementación con Supabase CLI ❗
 
 * Principalmente se instala Supabase CLI
 
@@ -699,7 +697,7 @@ Cliente (anon / authenticated)
    supabase db push
    ```
 
-### Fase 4 - Configuración de Autenticación
+### Fase 4 - Configuración de Autenticación ❗
 
 # Google OAuth en Supabase — Guía de Configuración
 
